@@ -35,11 +35,11 @@ services:
 
   client:
     build:
-      context: ./client
+      context: ./multi-client
       dockerfile: Dockerfile.dev
     volumes:
       - /app/node_modules
-      - ./client:/app
+      - ./multi-client:/app
     environment:
       - WDS_SOCKET_PORT=0
     
